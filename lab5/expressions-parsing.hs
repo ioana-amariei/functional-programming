@@ -110,12 +110,12 @@ decat TProdus.
 
 parseTerm :: [Token] -> Maybe (Exp, [Token])
 parseTerm te = case parseFactor te of
-                 Just (el, trest) ->
-                   case trest of
-						(TProdus:ter) -> case parseTerm ter of
-										   Nothing -> Just (el, TProdus:ter)
-										   Just (er, tl) -> Just ((Produs el er), tl)
-						Nothing -> Nothing
+                    Just (el, trest) -> case trest of
+									        (TProdus:ter) -> case parseTerm ter of
+																  Nothing -> Just (el, TProdus:ter)
+																  Just (er, tl) -> Just ((Produs el er), tl)
+						                    Nothing -> Nothing
+					Nothing -> Nothing						
 
 {-
 
@@ -324,10 +324,9 @@ evalStr exp = case parse exp of
 					_ -> Nothing
 					
 
-f :: String -> String
-f = reverse . skipWhiteSpace					
-trim = f . f
-	
+trim ('':xs) = trim xs
+trims (xs:'')
+
 main = do {
 	args <- getArgs;
 	case args of	
@@ -340,5 +339,8 @@ main = do {
 		_ -> error  "Please provide a single file to execute"
 }
 					
-	
+					
+				
+					
+-- de completat cu /, -, .... impartire Maybe....
 
