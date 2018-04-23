@@ -1,0 +1,9 @@
+n = 10;
+sum = 0;
+
+while n {
+sum = sum + n;
+n = n - 1;
+}
+
+result = sum;

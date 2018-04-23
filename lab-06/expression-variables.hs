@@ -1,7 +1,7 @@
 {-
 
 
-test: f:: Int->Int>Int f a b sau f (a b)
+test: f:: Int->Int->Int f a b sau f (a b)
 	 f, f' :: Int->Int f f' a sau f(f', a)
 
 Pana in acest moment, am realizat un evaluator pentru expresii

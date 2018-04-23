@@ -1,0 +1,7 @@
+constructor
+tipuri
+declarare tipuri
+cum se scriu functii recursiv
+la functii sa avem grija la tipuri
+
+de adaugat instructiuni noi

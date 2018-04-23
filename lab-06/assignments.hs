@@ -226,4 +226,4 @@ Exemple:
 
 -- un fel de hardcodare pt main()
 evalProgram :: Program -> Maybe Int
-evalProgram prog = (executaProgram empty prog) " result"
+evalProgram prog = (executaProgram empty prog) "result"
