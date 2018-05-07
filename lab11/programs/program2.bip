@@ -1,0 +1,11 @@
+x := 24;
+y := 84;
+while not (x == y)
+{
+  if x > y then {
+    x := x - y;
+  } else {
+    y := y - x;
+  }
+}
+result := x;

@@ -1,0 +1,14 @@
+x := 6;
+y := 7;
+result := 0;
+while not (x == 0)
+{
+  savey := y;
+  while not (y == 0)
+  {
+    result := result + 1;
+    y := y - 1;
+  }
+  y := savey;
+  x := x - 1;
+}

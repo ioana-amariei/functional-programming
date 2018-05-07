@@ -1,0 +1,15 @@
+x := 6;
+y :- 7;
+result := 0;
+ok :- x == 0;
+while not ok
+{
+  yp := y;
+  while not (yp == 0)
+  {
+    result := result + 1;
+    yp := yp - 1;
+  }
+  x := x - 1;
+  ok :- x == 0;
+}
