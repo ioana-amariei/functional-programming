@@ -1,0 +1,8 @@
+func main()
+  x := 6;
+  y := 7;
+  result := 0;
+  ok := true;
+  result := not ok;
+  return result
+  

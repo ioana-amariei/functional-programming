@@ -1,0 +1,16 @@
+func euclid(a,b)
+  if a == b then {
+    result := a;
+  } else {
+    if a > b then {
+      result := euclid(a - b, b);
+    } else {
+      result := euclid(a, b - a);
+    }
+  }
+  return result
+
+func main()
+  x := 3 * 3 * 5 * 7 * 7 * 13;
+  y := 3 * 5 * 5 * 7 * 7 * 11;
+  return euclid(x, y)

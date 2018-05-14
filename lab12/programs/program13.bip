@@ -1,0 +1,18 @@
+func iseven(a)
+  if (a == 0) then {
+    result := true;
+  } else {
+    result := isodd(a - 1);
+  }
+  return result
+
+func isodd(a)
+  if (a == 0) then {
+    result := false;
+  } else {
+    result := iseven(a - 1);
+  }
+  return result
+
+func main()
+  return iseven(100)

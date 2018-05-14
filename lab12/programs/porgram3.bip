@@ -1,0 +1,12 @@
+func main()
+  x := 6;
+  a := 1;
+  b := 1;
+  while not (x == 0)
+  {
+    c := a + b;
+    a := b;
+    b := c;
+    x := x - 1;
+  }
+  return a
